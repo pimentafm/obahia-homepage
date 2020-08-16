@@ -10,7 +10,7 @@
 
 # production
 /build
-/homepage
+/Headerpage
 
 # misc
 .DS_Store
