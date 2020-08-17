@@ -2,7 +2,13 @@ import React from 'react';
 
 import { Link } from 'react-scroll';
 
-import { GiStack, GiRaining, GiNetworkBars, GiMeshBall } from 'react-icons/gi';
+import {
+  GiStack,
+  GiRaining,
+  GiNetworkBars,
+  GiMeshBall,
+  GiWorld,
+} from 'react-icons/gi';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -60,12 +66,22 @@ const Home: React.FC = () => {
           </div>
           <div className="circle">
             <Link
-              to="section3"
+              to="section4"
               smooth={true}
               duration={500}
               className="scroll-link"
             >
               <GiMeshBall className="icons" />
+            </Link>
+          </div>
+          <div className="circle">
+            <Link
+              to="section5"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
+              <GiWorld className="icons" />
             </Link>
           </div>
         </div>
@@ -81,6 +97,9 @@ const Home: React.FC = () => {
           <Section image={image02} />
         </div>
         <div id="section4">
+          <Section />
+        </div>
+        <div id="section5">
           <Section />
         </div>
       </ParallaxProvider>

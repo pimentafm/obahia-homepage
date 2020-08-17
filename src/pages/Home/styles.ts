@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
 `;
 
 export const Banner = styled.div`
@@ -11,14 +10,18 @@ export const Banner = styled.div`
   justify-content: center;
   text-align: center;
   height: 100vh;
-  width: 100;
+  width: 100%;
   overflow-x: hidden;
+
+  svg {
+    width: 60vw;
+  }
 
   .banner-content {
     display: flex;
     flex-direction: column;
 
-    margin-top: 2vw;
+    margin-top: 5vw;
 
     h1 {
       color: #fff;
@@ -61,22 +64,24 @@ export const Banner = styled.div`
     background: #fff;
     margin: 10px;
     border-radius: 50%;
+    padding: 5px;
 
     box-shadow: 2px 2px 4px 0px #00000003;
 
     .icons {
       color: #1f5582;
-      width: 8vw;
-      height: 8vw;
-      min-width: 50px;
-      min-height: 50px;
+      width: 5vw;
+      height: 5vw;
+      min-width: 40px;
+      min-height: 40px;
+      border-radius: 50%;
       cursor: pointer;
 
       .scroll-link {
-        width: 10vw;
-        height: 10vw;
-        min-width: 60px;
-        min-height: 60px;
+        width: 5vw;
+        height: 5vw;
+        min-width: 40px;
+        min-height: 40px;
         border-radius: 50%;
 
         align-items: center;
