@@ -3,20 +3,18 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const Banner = styled.div`
   background: #1f5582;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
   text-align: center;
-
+  height: 100vh;
+  width: 100;
   overflow-x: hidden;
 
-  div {
+  .banner-content {
     display: flex;
     flex-direction: column;
 
@@ -44,39 +42,49 @@ export const Banner = styled.div`
     fill: #fff;
   }
 
-  svg {
-    width: 60vw;
-  }
-
   .banner-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .menu-content {
     display: flex;
     flex-direction: row;
+    text-align: center;
     justify-content: center;
     width: 100%;
   }
 
   .circle {
+    display: flex;
     background: #fff;
-    width: 10vw;
-    height: 10vw;
-    min-width: 60px;
-    min-height: 60px;
     margin: 10px;
     border-radius: 50%;
-    align-items: center;
-    justify-content: center;
 
     box-shadow: 2px 2px 4px 0px #00000003;
 
     .icons {
-      font-size: 80px;
       color: #1f5582;
+      width: 8vw;
+      height: 8vw;
+      min-width: 50px;
+      min-height: 50px;
       cursor: pointer;
+
+      .scroll-link {
+        width: 10vw;
+        height: 10vw;
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        z-index: 1;
+      }
     }
   }
 `;

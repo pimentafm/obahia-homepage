@@ -22,9 +22,6 @@ const Section: React.FC<SectionProps> = ({ image }) => {
             amount: 0.5,
           },
         ]}
-        style={{
-          height: '400px',
-        }}
       ></ParallaxBanner>
     </Container>
   );

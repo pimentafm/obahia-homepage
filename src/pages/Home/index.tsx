@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
+
 import { GiStack, GiRaining, GiNetworkBars, GiMeshBall } from 'react-icons/gi';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
@@ -24,27 +26,63 @@ const Home: React.FC = () => {
             </a>
             <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
           </div>
-
-          <div className="menu-content">
-            <div className="circle">
+        </div>
+        <div className="menu-content">
+          <div className="circle">
+            <Link
+              to="section1"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
               <GiStack className="icons" />
-            </div>
-            <div className="circle">
+            </Link>
+          </div>
+          <div className="circle">
+            <Link
+              to="section2"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
               <GiRaining className="icons" />
-            </div>
-            <div className="circle">
+            </Link>
+          </div>
+          <div className="circle">
+            <Link
+              to="section3"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
               <GiNetworkBars className="icons" />
-            </div>
-            <div className="circle">
+            </Link>
+          </div>
+          <div className="circle">
+            <Link
+              to="section3"
+              smooth={true}
+              duration={500}
+              className="scroll-link"
+            >
               <GiMeshBall className="icons" />
-            </div>
+            </Link>
           </div>
         </div>
       </Banner>
       <ParallaxProvider>
-        <Section image={image01} />
-        <Section image="" />
-        <Section image={image02} />
+        <div id="section1">
+          <Section image={image01} />
+        </div>
+        <div id="section2">
+          <Section />
+        </div>
+        <div id="section3">
+          <Section image={image02} />
+        </div>
+        <div id="section4">
+          <Section />
+        </div>
       </ParallaxProvider>
     </Container>
   );
