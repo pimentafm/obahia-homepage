@@ -2,12 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-scroll';
 
-import {
-  GiStack,
-  GiRaining,
-  GiMeshBall,
-  GiWorld,
-} from 'react-icons/gi';
+import { GiStack, GiRaining, GiMeshBall, GiWorld } from 'react-icons/gi';
 
 import { BsGraphDown } from 'react-icons/bs';
 
@@ -35,65 +30,82 @@ const Home: React.FC = () => {
             <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
           </div>
         </div>
-        
+
         <div className="menu-content">
           <div className="card">
-            <div className="icon"> <Link
-                  to="section1"
-                  smooth={true}
-                  duration={500}
-                  className="scroll-link"
-                >
-                  <GiStack className="icons" />
-                </Link></div>
+            <div className="icon">
+              {' '}
+              <Link
+                to="section1"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiStack className="icons" />
+              </Link>
+            </div>
             <p className="title">Séries temporais de Mapas</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
           <div className="card">
-            <div className="icon"> <Link
-                  to="section2"
-                  smooth={true}
-                  duration={500}
-                  className="scroll-link"
-                >
-                  <GiRaining className="icons" />
-                </Link></div>
+            <div className="icon">
+              {' '}
+              <Link
+                to="section2"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiRaining className="icons" />
+              </Link>
+            </div>
             <p className="title">Previsão do Início da Estação Chuvosa</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
           <div className="card">
-            <div className="icon"> <Link
-                  to="section3"
-                  smooth={true}
-                  duration={500}
-                  className="scroll-link"
-                >
-                  <BsGraphDown className="icons" />
-                </Link></div>
+            <div className="icon">
+              {' '}
+              <Link
+                to="section3"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <BsGraphDown className="icons" />
+              </Link>
+            </div>
             <p className="title">Previsão de Vazões Mínimas</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
           <div className="card">
-            <div className="icon"> <Link
-                  to="section4"
-                  smooth={true}
-                  duration={500}
-                  className="scroll-link"
-                >
-                  <GiMeshBall className="icons" />
-                </Link></div>
-            <p className="title">Visualizador do Modelo de Águas Subterrâneas</p>
+            <div className="icon">
+              {' '}
+              <Link
+                to="section4"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiMeshBall className="icons" />
+              </Link>
+            </div>
+            <p className="title">
+              Visualizador do Modelo de Águas Subterrâneas
+            </p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
           <div className="card">
-            <div className="icon"> <Link
-                  to="section5"
-                  smooth={true}
-                  duration={500}
-                  className="scroll-link"
-                >
-                  <GiWorld className="icons" />
-                </Link></div>
+            <div className="icon">
+              {' '}
+              <Link
+                to="section5"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiWorld className="icons" />
+              </Link>
+            </div>
             <p className="title">Servidor de Mapas</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>

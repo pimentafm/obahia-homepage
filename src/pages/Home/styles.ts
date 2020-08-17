@@ -46,9 +46,7 @@ export const Banner = styled.div`
     width: 100%;
     max-width: 100%;
 
-    justify-content: center;
-    
-    background: #ff000033;
+    border: 0px solid #ffffff00;
 
     -webkit-scrollbar {
       display: none;
@@ -58,15 +56,14 @@ export const Banner = styled.div`
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
     padding: 20px;
     position: relative;
-    margin: 10px;
+
+    margin-right: 20px;
+
     width: 100%;
     height: 250px;
     max-width: 300px;
@@ -75,7 +72,7 @@ export const Banner = styled.div`
     border-radius: 10px;
     border: 2px solid rgba(7, 7, 7, 0.12);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-    font-size: 16px;   
+    font-size: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
   }
@@ -84,8 +81,13 @@ export const Banner = styled.div`
     margin: 0 auto;
     width: 100%;
     height: 80px;
-    max-width:80px;
-    background: linear-gradient(90deg, #67B3F3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);
+    max-width: 80px;
+    background: linear-gradient(
+      90deg,
+      #67b3f3 0%,
+      #1f5582 40%,
+      rgba(0, 0, 0, 0.28) 60%
+    );
     border-radius: 100%;
     display: flex;
     color: white;
@@ -95,51 +97,51 @@ export const Banner = styled.div`
   }
 
   .card .title {
-   width: 100%;
-   margin: 0;
-   text-align: center;
-   margin-top: 30px;
-   color: white;
-   font-weight: 600;
-   text-transform: uppercase;
-   letter-spacing: 4px;
-}
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
 
-.card .text {
-   width: 80%;
-   margin: 0 auto;
-   font-size: 13px;
-   text-align: center;
-   margin-top: 20px;
-   color: white;
-   font-weight: 200;
-   letter-spacing: 2px;
-   opacity: 0;
-   max-height:0;
-   transition: all 0.3s ease;
-}
+  .card .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+  }
 
-.card:hover {
-   height: 270px;
-}
+  .card:hover {
+    height: 270px;
+  }
 
-.card:hover .text {
-   transition: all 0.3s ease;
-   opacity: 1;
-   max-height:40px;
-}
+  .card:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+  }
 
-.card:hover .icons {
-   background-position: -120px;
-   transition: all 0.3s ease;
-}
+  .card:hover .icons {
+    background-position: -120px;
+    transition: all 0.3s ease;
+  }
 
-.card:hover .icons i {
-   background: linear-gradient(90deg, #67B3F3, #1f5582);
-	-webkit-text-fill-color: transparent;
-   opacity: 1;
-   transition: all 0.3s ease;
-}
+  .card:hover .icons i {
+    background: linear-gradient(90deg, #67b3f3, #1f5582);
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
 
   .scroll-link {
     width: 4vw;
