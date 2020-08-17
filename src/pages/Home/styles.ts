@@ -17,6 +17,90 @@ export const Banner = styled.div`
     width: 70vw;
   }
 
+  .card {
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 250px;
+    background-color: #1f5582;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;   
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .icons {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width:80px;
+    background: linear-gradient(90deg, #67B3F3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+
+  .card .title {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+   margin-top: 30px;
+   color: white;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+.card .text {
+   width: 80%;
+   margin: 0 auto;
+   font-size: 13px;
+   text-align: center;
+   margin-top: 20px;
+   color: white;
+   font-weight: 200;
+   letter-spacing: 2px;
+   opacity: 0;
+   max-height:0;
+   transition: all 0.3s ease;
+}
+
+.card:hover {
+   height: 270px;
+}
+
+.card:hover .text {
+   transition: all 0.3s ease;
+   opacity: 1;
+   max-height:40px;
+}
+
+.card:hover .icons {
+   background-position: -120px;
+   transition: all 0.3s ease;
+}
+
+.card:hover .icons i {
+   background: linear-gradient(90deg, #67B3F3, #1f5582);
+	-webkit-text-fill-color: transparent;
+   opacity: 1;
+   transition: all 0.3s ease;
+}
+
   .banner-content {
     display: flex;
     flex-direction: column;
@@ -56,19 +140,19 @@ export const Banner = styled.div`
 
   .circle {
     display: flex;
-    background: #fff;
+    background: #1f5582;
     margin: 10px;
     border-radius: 50%;
 
     box-shadow: 2px 2px 4px 0px #00000003;
 
     .icons {
-      color: #1f5582;
+      color: #fff;
       width: 4vw;
       height: 4vw;
 
-      min-width: 50px;
-      min-height: 50px;
+      min-width: 60px;
+      min-height: 60px;
 
       cursor: pointer;
 
@@ -81,8 +165,8 @@ export const Banner = styled.div`
         width: 4vw;
         height: 4vw;
 
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 60px;
+        min-height: 60px;
         border-radius: 50%;
         z-index: 1;
       }
