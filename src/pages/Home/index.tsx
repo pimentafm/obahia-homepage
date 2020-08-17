@@ -35,6 +35,7 @@ const Home: React.FC = () => {
             <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
           </div>
         </div>
+        
         <div className="menu-content">
           <div className="card">
             <div className="icon"> <Link

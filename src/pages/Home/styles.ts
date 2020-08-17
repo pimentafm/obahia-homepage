@@ -7,35 +7,77 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   background: #1f5582;
-  justify-content: center;
-  text-align: center;
   height: 100vh;
-  width: 100%;
   overflow-x: hidden;
+  text-align: center;
+
+  .logo path {
+    fill: #fff;
+  }
+
+  .logo path {
+    fill: #fff;
+  }
 
   svg {
     width: 70vw;
   }
 
-  .card {
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+  }
+
+  .banner-content {
+    @media only screen and (max-width: 700px) {
+      h1 {
+        font-size: 25px;
+      }
+    }
+    margin-top: 5vw;
+  }
+
+  .menu-content {
+    display: flex;
+    overflow-x: auto;
+
     width: 100%;
-    max-width: 300px;
-    min-width: 200px;
-    height: 250px;
-    background-color: #1f5582;
+    max-width: 100%;
+
+    justify-content: center;
+    
+    background: #ff000033;
+
+    -webkit-scrollbar {
+      display: none;
+    }
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
     margin: 10px;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    min-width: 300px;
+    background-color: #1f5582;
     border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     border: 2px solid rgba(7, 7, 7, 0.12);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     font-size: 16px;   
     transition: all 0.3s ease;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     cursor: pointer;
-    transition: all 0.3s ease;
   }
 
   .icons {
@@ -46,8 +88,6 @@ export const Banner = styled.div`
     background: linear-gradient(90deg, #67B3F3 0%, #1f5582 40%, rgba(0, 0, 0, 0.28) 60%);
     border-radius: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     transition: all 0.8s ease;
     background-position: 0px;
@@ -101,74 +141,12 @@ export const Banner = styled.div`
    transition: all 0.3s ease;
 }
 
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 5vw;
-
-    h1 {
-      color: #fff;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 25px;
-    }
-
-    @media only screen and (max-width: 700px) {
-      h1 {
-        font-size: 25px;
-      }
-    }
-
-    .logo path {
-      fill: #fff;
-    }
-
-    .logo path {
-      fill: #fff;
-    }
-  }
-
-  .menu-content {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .circle {
-    display: flex;
-    background: #1f5582;
-    margin: 10px;
+  .scroll-link {
+    width: 4vw;
+    height: 4vw;
+    min-width: 60px;
+    min-height: 60px;
     border-radius: 50%;
-
-    box-shadow: 2px 2px 4px 0px #00000003;
-
-    .icons {
-      color: #fff;
-      width: 4vw;
-      height: 4vw;
-
-      min-width: 60px;
-      min-height: 60px;
-
-      cursor: pointer;
-
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .scroll-link {
-        width: 4vw;
-        height: 4vw;
-
-        min-width: 60px;
-        min-height: 60px;
-        border-radius: 50%;
-        z-index: 1;
-      }
+    z-index: 1;
   }
 `;
