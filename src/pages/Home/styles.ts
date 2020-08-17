@@ -14,12 +14,13 @@ export const Banner = styled.div`
   overflow-x: hidden;
 
   svg {
-    width: 60vw;
+    width: 70vw;
   }
 
   .banner-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     margin-top: 5vw;
 
@@ -27,7 +28,7 @@ export const Banner = styled.div`
       color: #fff;
       font-size: 30px;
       font-weight: bold;
-      padding: 5px 25px 10px 25px;
+      padding: 25px;
     }
 
     @media only screen and (max-width: 700px) {
@@ -35,20 +36,14 @@ export const Banner = styled.div`
         font-size: 25px;
       }
     }
-  }
 
-  .logo path {
-    fill: #fff;
-  }
+    .logo path {
+      fill: #fff;
+    }
 
-  .logo path {
-    fill: #fff;
-  }
-
-  .banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .logo path {
+      fill: #fff;
+    }
   }
 
   .menu-content {
@@ -64,32 +59,32 @@ export const Banner = styled.div`
     background: #fff;
     margin: 10px;
     border-radius: 50%;
-    padding: 5px;
 
     box-shadow: 2px 2px 4px 0px #00000003;
 
     .icons {
       color: #1f5582;
-      width: 5vw;
-      height: 5vw;
-      min-width: 40px;
-      min-height: 40px;
-      border-radius: 50%;
+      width: 4vw;
+      height: 4vw;
+
+      min-width: 50px;
+      min-height: 50px;
+
       cursor: pointer;
 
-      .scroll-link {
-        width: 5vw;
-        height: 5vw;
-        min-width: 40px;
-        min-height: 40px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .scroll-link {
+        width: 4vw;
+        height: 4vw;
+
+        min-width: 50px;
+        min-height: 50px;
         border-radius: 50%;
-
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-
         z-index: 1;
       }
-    }
   }
 `;
