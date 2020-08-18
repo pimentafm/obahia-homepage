@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import BackgroundImg from '../../assets/landuse.png';
+import BackgroundImg from '../../assets/landuse2.png';
 
 export const Container = styled.div`
   display: flex;
@@ -9,9 +9,9 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   background: #1f5582;
-  /* background: url(${BackgroundImg}) no-repeat center;
+  background: url(${BackgroundImg}) no-repeat center;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 
   height: 100vh;
   overflow-x: hidden;

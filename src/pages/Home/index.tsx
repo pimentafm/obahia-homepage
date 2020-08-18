@@ -60,7 +60,7 @@ const Home: React.FC = () => {
             {
               breakpoint: 1580,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 initialSlide: 3,
               },
             },
