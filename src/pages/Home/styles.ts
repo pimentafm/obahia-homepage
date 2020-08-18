@@ -50,10 +50,6 @@ export const Banner = styled.div`
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
-  .slider-docts {
-    color: #fff;
-  }
-
   .card {
     padding: 20px;
     margin: 10px;
@@ -145,5 +141,69 @@ export const Banner = styled.div`
     min-height: 60px;
     border-radius: 50%;
     z-index: 1;
+  }
+
+  .slick-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 1;
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+    font-size: medium;
+
+    opacity: 0.25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: white;
   }
 `;
