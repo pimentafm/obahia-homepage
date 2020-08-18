@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import BackgroundImg from '../../assets/agriculture.png';
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,13 +9,13 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   background: #1f5582;
+  /* background: url(${BackgroundImg}) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed; */
+
   height: 100vh;
   overflow-x: hidden;
   text-align: center;
-
-  .logo path {
-    fill: #fff;
-  }
 
   .logo path {
     fill: #fff;
@@ -197,7 +199,7 @@ export const Banner = styled.div`
     font-size: medium;
 
     opacity: 0.25;
-    color: black;
+    color: #67b3f3;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

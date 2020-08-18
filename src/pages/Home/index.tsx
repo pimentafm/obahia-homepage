@@ -19,8 +19,7 @@ import Section from '../../components/Section';
 import image01 from '../../assets/landuse.png';
 import image02 from '../../assets/agriculture.png';
 
-import { Container } from './styles';
-import { Banner } from './styles';
+import { Container, Banner } from './styles';
 
 const Home: React.FC = () => {
   return (
@@ -36,11 +35,10 @@ const Home: React.FC = () => {
         <Slider
           className="slider-content"
           dots={true}
-          centerMode={true}
           infinite={true}
-          initialSlide={0}
+          initialSlide={3}
           slidesToShow={5}
-          centerPadding="0px"
+          centerPadding="60px"
           slidesToScroll={1}
           speed={500}
           responsive={[
@@ -48,7 +46,7 @@ const Home: React.FC = () => {
               breakpoint: 1580,
               settings: {
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
               },
@@ -57,7 +55,7 @@ const Home: React.FC = () => {
               breakpoint: 1208,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: true,
               },
@@ -66,8 +64,7 @@ const Home: React.FC = () => {
               breakpoint: 950,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2,
+                slidesToScroll: 1,
               },
             },
             {
@@ -82,6 +79,50 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
+                to="section5"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiEarthAmerica className="icons" />
+              </Link>
+            </div>
+            <p className="title">AA</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section4"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiMeshBall className="icons" />
+              </Link>
+            </div>
+            <p className="title">
+              Visualizador do Modelo de Águas Subterrâneas
+            </p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section3"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <BsGraphDown className="icons" />
+              </Link>
+            </div>
+            <p className="title">Previsão de Vazões Mínimas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
                 to="section1"
                 smooth={true}
                 duration={500}
@@ -110,31 +151,15 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section3"
+                to="section5"
                 smooth={true}
                 duration={500}
                 className="scroll-link"
               >
-                <BsGraphDown className="icons" />
+                <GiEarthAmerica className="icons" />
               </Link>
             </div>
-            <p className="title">Previsão de Vazões Mínimas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section4"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiMeshBall className="icons" />
-              </Link>
-            </div>
-            <p className="title">
-              Visualizador do Modelo de Águas Subterrâneas
-            </p>
+            <p className="title">BB</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
           <div className="card">
@@ -148,126 +173,23 @@ const Home: React.FC = () => {
                 <GiEarthAmerica className="icons" />
               </Link>
             </div>
-            <p className="title">Servidor de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section5"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiEarthAmerica className="icons" />
-              </Link>
-            </div>
-            <p className="title">Servidor de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section5"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiEarthAmerica className="icons" />
-              </Link>
-            </div>
-            <p className="title">Servidor de Mapas</p>
+            <p className="title">CC</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
         </Slider>
-
-        {/* <div className="menu-content">
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section1"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiStack className="icons" />
-              </Link>
-            </div>
-            <p className="title">Séries temporais de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section2"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiRaining className="icons" />
-              </Link>
-            </div>
-            <p className="title">Previsão do Início da Estação Chuvosa</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section3"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <BsGraphDown className="icons" />
-              </Link>
-            </div>
-            <p className="title">Previsão de Vazões Mínimas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section4"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiMeshBall className="icons" />
-              </Link>
-            </div>
-            <p className="title">
-              Visualizador do Modelo de Águas Subterrâneas
-            </p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-          <div className="card">
-            <div className="icon">
-              <Link
-                to="section5"
-                smooth={true}
-                duration={500}
-                className="scroll-link"
-              >
-                <GiEarthAmerica className="icons" />
-              </Link>
-            </div>
-            <p className="title">Servidor de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
-          </div>
-        </div> */}
       </Banner>
       <ParallaxProvider>
         <div id="section1">
-          <Section image={image01} />
+          <Section />
         </div>
         <div id="section2">
-          <Section />
+          <Section image={image01} />
         </div>
         <div id="section3">
-          <Section image={image02} />
+          <Section />
         </div>
         <div id="section4">
-          <Section />
+          <Section image={image02} />
         </div>
         <div id="section5">
           <Section />
