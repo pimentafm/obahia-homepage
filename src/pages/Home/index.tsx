@@ -34,44 +34,55 @@ const Home: React.FC = () => {
 
         <Slider
           className="slider-content"
+          centerMode={true}
           dots={true}
           infinite={true}
           initialSlide={3}
-          slidesToShow={5}
-          centerPadding="60px"
+          slidesToShow={7}
+          centerPadding="0px"
           slidesToScroll={1}
           speed={500}
           responsive={[
             {
+              breakpoint: 2060,
+              settings: {
+                slidesToShow: 6,
+                initialSlide: 3,
+              },
+            },
+            {
+              breakpoint: 1920,
+              settings: {
+                slidesToShow: 5,
+                initialSlide: 3,
+              },
+            },
+            {
               breakpoint: 1580,
               settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
+                slidesToShow: 3,
+                initialSlide: 3,
               },
             },
             {
               breakpoint: 1208,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
+                initialSlide: 3,
               },
             },
             {
               breakpoint: 950,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                initialSlide: 3,
               },
             },
             {
               breakpoint: 650,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
+                initialSlide: 3,
               },
             },
           ]}
