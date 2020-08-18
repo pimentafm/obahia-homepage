@@ -39,15 +39,7 @@ export const Banner = styled.div`
     margin-top: 5vw;
   }
 
-  .menu-content {
-    display: flex;
-    overflow-x: auto;
-
-    width: 100%;
-    max-width: 100%;
-
-    border: 0px solid #ffffff00;
-
+  .slider-content {
     -webkit-scrollbar {
       display: none;
     }
@@ -58,19 +50,22 @@ export const Banner = styled.div`
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
+  .slider-docts {
+    color: #fff;
+  }
+
   .card {
     padding: 20px;
+    margin: 10px;
     position: relative;
 
-    margin-right: 20px;
-
-    width: 100%;
+    width: 250px;
     height: 250px;
     max-width: 300px;
     min-width: 300px;
     background-color: #1f5582;
     border-radius: 10px;
-    border: 2px solid rgba(7, 7, 7, 0.12);
+    border: 0px solid rgba(7, 7, 7, 0.12);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     font-size: 16px;
     transition: all 0.3s ease;

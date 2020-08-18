@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { Link } from 'react-scroll';
 
 import { GiStack, GiRaining, GiMeshBall, GiWorld } from 'react-icons/gi';
@@ -31,10 +35,54 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        <div className="menu-content">
+        <Slider
+          className="slider-content"
+          dots={true}
+          centerMode={true}
+          infinite={true}
+          initialSlide={0}
+          slidesToShow={5}
+          centerPadding="0px"
+          slidesToScroll={1}
+          speed={500}
+          responsive={[
+            {
+              breakpoint: 1580,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 1208,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 950,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+              },
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ]}
+        >
           <div className="card">
             <div className="icon">
-              {' '}
               <Link
                 to="section1"
                 smooth={true}
@@ -49,7 +97,6 @@ const Home: React.FC = () => {
           </div>
           <div className="card">
             <div className="icon">
-              {' '}
               <Link
                 to="section2"
                 smooth={true}
@@ -64,7 +111,6 @@ const Home: React.FC = () => {
           </div>
           <div className="card">
             <div className="icon">
-              {' '}
               <Link
                 to="section3"
                 smooth={true}
@@ -79,7 +125,6 @@ const Home: React.FC = () => {
           </div>
           <div className="card">
             <div className="icon">
-              {' '}
               <Link
                 to="section4"
                 smooth={true}
@@ -96,7 +141,6 @@ const Home: React.FC = () => {
           </div>
           <div className="card">
             <div className="icon">
-              {' '}
               <Link
                 to="section5"
                 smooth={true}
@@ -109,7 +153,110 @@ const Home: React.FC = () => {
             <p className="title">Servidor de Mapas</p>
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
-        </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section5"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiWorld className="icons" />
+              </Link>
+            </div>
+            <p className="title">Servidor de Mapas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section5"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiWorld className="icons" />
+              </Link>
+            </div>
+            <p className="title">Servidor de Mapas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+        </Slider>
+
+        {/* <div className="menu-content">
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section1"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiStack className="icons" />
+              </Link>
+            </div>
+            <p className="title">Séries temporais de Mapas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section2"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiRaining className="icons" />
+              </Link>
+            </div>
+            <p className="title">Previsão do Início da Estação Chuvosa</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section3"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <BsGraphDown className="icons" />
+              </Link>
+            </div>
+            <p className="title">Previsão de Vazões Mínimas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section4"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiMeshBall className="icons" />
+              </Link>
+            </div>
+            <p className="title">
+              Visualizador do Modelo de Águas Subterrâneas
+            </p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+          <div className="card">
+            <div className="icon">
+              <Link
+                to="section5"
+                smooth={true}
+                duration={500}
+                className="scroll-link"
+              >
+                <GiWorld className="icons" />
+              </Link>
+            </div>
+            <p className="title">Servidor de Mapas</p>
+            <p className="text">Clique para acessar a ferramenta</p>
+          </div>
+        </div> */}
       </Banner>
       <ParallaxProvider>
         <div id="section1">
