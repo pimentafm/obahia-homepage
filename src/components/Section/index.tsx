@@ -9,20 +9,24 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ image }) => {
-  const [background] = useState(image);
+  const [backgroundImage] = useState(image);
 
-  useEffect(() => {}, [background]);
+  useEffect(() => {
+  }, [backgroundImage]);
   return (
     <Container>
       <ParallaxBanner
         className="section-content"
         layers={[
           {
-            image: background,
+            image: backgroundImage,
+
             amount: 0.5,
           },
         ]}
-      ></ParallaxBanner>
+      >
+        <h1>Section</h1>
+      </ParallaxBanner>
     </Container>
   );
 };

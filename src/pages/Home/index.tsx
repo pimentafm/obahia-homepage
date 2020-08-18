@@ -92,7 +92,7 @@ const Home: React.FC = () => {
               <Link
                 to="section5"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiEarthAmerica className="icons" />
@@ -106,7 +106,7 @@ const Home: React.FC = () => {
               <Link
                 to="section4"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiMeshBall className="icons" />
@@ -122,7 +122,7 @@ const Home: React.FC = () => {
               <Link
                 to="section3"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <BsGraphDown className="icons" />
@@ -134,9 +134,9 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section1"
+                to="section2"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiStack className="icons" />
@@ -148,9 +148,9 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section2"
+                to="section1"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiRaining className="icons" />
@@ -162,9 +162,9 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section5"
+                to="section6"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiEarthAmerica className="icons" />
@@ -176,9 +176,9 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section5"
+                to="section7"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 className="scroll-link"
               >
                 <GiEarthAmerica className="icons" />
@@ -194,15 +194,21 @@ const Home: React.FC = () => {
           <Section />
         </div>
         <div id="section2">
-          <Section image={image01} />
+          <Section image={image01}/>
         </div>
-        <div id="section3">
-          <Section />
+        <div id="section3" >
+          <Section/>
         </div>
         <div id="section4">
           <Section image={image02} />
         </div>
         <div id="section5">
+          <Section />
+        </div>
+        <div id="section6">
+          <Section image={image02} />
+        </div>
+        <div id="section7">
           <Section />
         </div>
       </ParallaxProvider>

@@ -27,15 +27,16 @@ export const Banner = styled.div`
 
   h1 {
     color: #fff;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: bold;
-    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 
   .banner-content {
     @media only screen and (max-width: 700px) {
       h1 {
-        font-size: 25px;
+        font-size: 35px;
       }
     }
     margin-top: 5vw;
