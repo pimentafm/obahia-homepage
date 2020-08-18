@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { Link } from 'react-scroll';
 
-import { GiStack, GiRaining, GiMeshBall, GiWorld } from 'react-icons/gi';
+import { GiStack, GiRaining, GiMeshBall, GiEarthAmerica } from 'react-icons/gi';
 
 import { BsGraphDown } from 'react-icons/bs';
 
@@ -28,9 +28,7 @@ const Home: React.FC = () => {
       <Banner>
         <div className="banner-content">
           <div>
-            <a href="http://obahia.dea.ufv.br">
-              <Logo className="logo" />
-            </a>
+            <Logo className="logo" />
             <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
           </div>
         </div>
@@ -147,7 +145,7 @@ const Home: React.FC = () => {
                 duration={500}
                 className="scroll-link"
               >
-                <GiWorld className="icons" />
+                <GiEarthAmerica className="icons" />
               </Link>
             </div>
             <p className="title">Servidor de Mapas</p>
@@ -161,7 +159,7 @@ const Home: React.FC = () => {
                 duration={500}
                 className="scroll-link"
               >
-                <GiWorld className="icons" />
+                <GiEarthAmerica className="icons" />
               </Link>
             </div>
             <p className="title">Servidor de Mapas</p>
@@ -175,7 +173,7 @@ const Home: React.FC = () => {
                 duration={500}
                 className="scroll-link"
               >
-                <GiWorld className="icons" />
+                <GiEarthAmerica className="icons" />
               </Link>
             </div>
             <p className="title">Servidor de Mapas</p>
@@ -250,7 +248,7 @@ const Home: React.FC = () => {
                 duration={500}
                 className="scroll-link"
               >
-                <GiWorld className="icons" />
+                <GiEarthAmerica className="icons" />
               </Link>
             </div>
             <p className="title">Servidor de Mapas</p>
