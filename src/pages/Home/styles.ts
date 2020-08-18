@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import BackgroundImg from '../../assets/agriculture.png';
+import BackgroundImg from '../../assets/landuse.png';
 
 export const Container = styled.div`
   display: flex;
@@ -61,7 +61,7 @@ export const Banner = styled.div`
     height: 250px;
     max-width: 300px;
     min-width: 300px;
-    background-color: #1f5582;
+    background-color: #25689F;
     border-radius: 10px;
     border: 0px solid rgba(7, 7, 7, 0.12);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
@@ -116,6 +116,7 @@ export const Banner = styled.div`
 
   .card:hover {
     height: 270px;
+    background: #1f5582;
   }
 
   .card:hover .text {
@@ -130,7 +131,7 @@ export const Banner = styled.div`
   }
 
   .card:hover .icons i {
-    background: linear-gradient(90deg, #67b3f3, #1f5582);
+    background: linear-gradient(90deg, #2D80C0, #1f5582);
     -webkit-text-fill-color: transparent;
     opacity: 1;
     transition: all 0.3s ease;
@@ -198,8 +199,8 @@ export const Banner = styled.div`
     text-align: center;
     font-size: medium;
 
-    opacity: 0.25;
-    color: #67b3f3;
+    opacity: 0.50;
+    color: #000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
