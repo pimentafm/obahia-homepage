@@ -17,7 +17,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Section from '../../components/Section';
 
 import image01 from '../../assets/landuse.png';
-import image02 from '../../assets/agriculture.png';
+import image02 from '../../assets/river.png';
+import image03 from '../../assets/river2.jpg';
 
 import { Container, Banner } from './styles';
 
@@ -206,7 +207,7 @@ const Home: React.FC = () => {
           <Section />
         </div>
         <div id="section6">
-          <Section image={image02} />
+          <Section image={image03} />
         </div>
         <div id="section7">
           <Section />
