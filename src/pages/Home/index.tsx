@@ -189,6 +189,8 @@ const Home: React.FC = () => {
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
         </Slider>
+
+
       </Banner>
       <ParallaxProvider>
         <div id="section1">

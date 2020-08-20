@@ -8,6 +8,8 @@ export const Container = styled.div`
 `;
 
 export const Banner = styled.div`
+  display: flex;  
+  flex-direction: column;
   background: #1f5582;
   background: url(${BackgroundImg}) no-repeat center;
   background-size: cover;
