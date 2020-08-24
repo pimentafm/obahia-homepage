@@ -32,16 +32,15 @@ export const Banner = styled.div`
     font-size: 60px;
     font-weight: bold;
     margin-top: 20px;
-    margin-bottom: 25px;
   }
 
   .banner-content {
     @media only screen and (max-width: 700px) {
       h1 {
-        font-size: 35px;
+        font-size: 30px;
       }
     }
-    margin-top: 5vw;
+    margin-top: 2vw;
   }
 
   .slider-content {
@@ -118,7 +117,7 @@ export const Banner = styled.div`
   }
 
   .card:hover {
-    height: 270px;
+    height: 350px;
     background: #1f5582;
   }
 

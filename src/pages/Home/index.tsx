@@ -6,9 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { Link } from 'react-scroll';
 
-import { GiStack, GiRaining, GiMeshBall, GiEarthAmerica } from 'react-icons/gi';
-
-import { BsGraphDown } from 'react-icons/bs';
+import { GiStack, GiRaining, GiMeshBall, GiEarthAmerica, GiMoneyStack, GiShakingHands } from 'react-icons/gi';
+import { MdTrendingDown } from 'react-icons/md'
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
@@ -86,7 +85,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Séries temporais de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text">Esta ferramenta permite a visualização e análise customizada das séries temporais de mapas a nível regional, de bacia, de áreas de drenagem e a nível municipal para a região do Oeste da Bahia.</p>
           </div>
 
           <div className="card">
@@ -127,7 +126,7 @@ const Home: React.FC = () => {
                 duration={1000}
                 className="scroll-link"
               >
-                <BsGraphDown className="icons" />
+                <MdTrendingDown className="icons" style={{ fontSize: 10 }} />
               </Link>
             </div>
             <p className="title">Previsão de Vazões Mínimas</p>
@@ -159,7 +158,7 @@ const Home: React.FC = () => {
                 duration={1000}
                 className="scroll-link"
               >
-                <GiEarthAmerica className="icons" />
+                <GiMoneyStack className="icons" />
               </Link>
             </div>
             <p className="title">Lucratividade Rural</p>
@@ -174,7 +173,7 @@ const Home: React.FC = () => {
                 duration={1000}
                 className="scroll-link"
               >
-                <GiEarthAmerica className="icons" />
+                <GiShakingHands className="icons" />
               </Link>
             </div>
             <p className="title">Governança</p>
