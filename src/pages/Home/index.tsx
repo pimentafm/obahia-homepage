@@ -180,6 +180,10 @@ const Home: React.FC = () => {
             <p className="text">Clique para acessar a ferramenta</p>
           </div>
         </Slider>
+        <div className="banner-buttons">
+          <a href="http://www.google.com">Iformações adicionais</a>
+          <a href="http://www.google.com">Sobre o projeto</a>
+        </div>
       </Banner>
     </Container>
   );

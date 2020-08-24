@@ -43,6 +43,42 @@ export const Banner = styled.div`
     margin-top: 2vw;
   }
 
+  .banner-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-buttons a {
+    width: 240px;
+    margin: 50px 10px 10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 0px solid rgba(7, 7, 7, 0.12);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+
+    @media only screen and (max-width: 700px) {
+      margin: 5px 10px 10px 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    align-items: center;
+    background: #25689F;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+
+  .banner-buttons a:hover{
+    background: #1f5582;
+    transition: 0.3s ease;
+  }
+
   .slider-content {
     -webkit-scrollbar {
       display: none;
@@ -159,6 +195,12 @@ export const Banner = styled.div`
     padding: 0;
 
     cursor: pointer;
+
+    @media only screen and (max-width: 700px) {
+      top: -40px;
+      
+    }
+
   }
   .slick-dots li button {
     font-size: 0;
