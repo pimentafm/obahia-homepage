@@ -85,7 +85,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Séries temporais de Mapas</p>
-            <p className="text">Esta ferramenta permite a visualização e análise customizada das séries temporais de mapas a nível regional, de bacia, de áreas de drenagem e a nível municipal para a região do Oeste da Bahia.</p>
+            <p className="text">Esta ferramenta permite a visualização e análise customizada das séries temporais de mapas a nível regional, de bacia hidrográfica, de áreas de drenagem e a nível municipal para a região do Oeste da Bahia.</p>
           </div>
 
           <div className="card">
@@ -100,7 +100,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Vizualização de Mapas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text">Esta ferramenta permite a visualização e análise customizada das bases de dados contidas nessa plataforma.</p>
           </div>
 
           <div className="card">
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Previsão do Início da Estação Chuvosa</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text">Esta ferramenta permite a visualização customizada da previsão do início das chuvas para o Oeste da Bahia, conforme previsto pelo sistema de previsão climática CFSv2 do NCEP/NOAA.</p>
           </div>
           
           <div className="card">
@@ -130,7 +130,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Previsão de Vazões Mínimas</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
           </div>
 
           <div className="card">
@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             <p className="title">
               Visualizador do Modelo de Águas Subterrâneas
             </p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text">Esta ferramenta permite a visualização customizada dos resultados do modelo de águas subterrâneas paras as bacias do Alto Rio Grande, Médio Rio Grande, Rio Corrente e Rio Carinhanha.</p>
           </div>
 
           <div className="card">
@@ -162,7 +162,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Lucratividade Rural</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
           </div>
 
           <div className="card">
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Governança</p>
-            <p className="text">Clique para acessar a ferramenta</p>
+            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
           </div>
         </Slider>
         <div className="banner-buttons">
