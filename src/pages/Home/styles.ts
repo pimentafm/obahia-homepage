@@ -1,19 +1,37 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-import BackgroundImg from '../../assets/banner.png';
+import image01 from '../../assets/image01.png';
+import image02 from '../../assets/image02.png';
+import image03 from '../../assets/image03.png';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
+const changeBackground = keyframes`
+ 0%{
+   background:  url(${image01}) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ 50%{
+   background:  url(${image02}) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+ 100%{
+   background:  url(${image03}) no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+ }
+`;
+
 export const Banner = styled.div`
   display: flex;
   flex-direction: column;
-  background: #1f5582;
-  background: url(${BackgroundImg}) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
+
+  animation: ${changeBackground} 10s infinite;
 
   height: 100vh;
   overflow-x: hidden;
