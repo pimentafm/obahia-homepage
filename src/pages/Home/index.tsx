@@ -18,15 +18,17 @@ import { MdTrendingDown } from 'react-icons/md';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
-import { Container, Banner } from './styles';
+import { Container, Banner, Background } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
+   <Background />
       <Banner>
+      
         <Logo className="logo" />
         <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
-
+       
         <Slider
           className="slider-content"
           centerMode={true}
@@ -204,11 +206,16 @@ const Home: React.FC = () => {
             </p>
           </div>
         </Slider>
+
         <div className="banner-buttons">
           <a href="http://www.google.com">Iformações adicionais</a>
           <a href="http://www.google.com">Sobre o projeto</a>
+        
         </div>
+
+     
       </Banner>
+
     </Container>
   );
 };

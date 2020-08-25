@@ -12,33 +12,51 @@ export const Container = styled.div`
 const changeBackground = keyframes`
  0%{
    background:  url(${image01}) no-repeat center;
-   background-size: cover;
    background-attachment: fixed;
+   background-size: cover;
  }
  50%{
    background:  url(${image02}) no-repeat center;
-   background-size: cover;
    background-attachment: fixed;
+   background-size: cover;
  }
  100%{
    background:  url(${image03}) no-repeat center;
-   background-size: cover;
    background-attachment: fixed;
+   background-size: cover;
  }
+`;
+
+export const Background = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+
+  -webkit-animation: ${changeBackground} 10s infinite; /* Safari 4+ */
+  -moz-animation:    ${changeBackground} 10s infinite; /* Fx 5+ */
+  -o-animation:      ${changeBackground} 10s infinite; /* Opera 12+ */
+  animation:         ${changeBackground} 10s linear infinite; /* IE 10+, Fx 29+ */
 `;
 
 export const Banner = styled.div`
   display: flex;
   flex-direction: column;
 
-  animation: ${changeBackground} 10s infinite;
-
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   text-align: center;
 
   .logo path {
     fill: #fff;
+  }
+
+  .logo {
+    z-index: 1;
   }
 
   svg {
@@ -56,6 +74,7 @@ export const Banner = styled.div`
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 1;
   }
 
   @media only screen and (max-width: 700px) {
@@ -74,6 +93,7 @@ export const Banner = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
 
   .banner-buttons a {
