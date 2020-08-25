@@ -25,6 +25,8 @@ export const Banner = styled.div`
 
   svg {
     width: 70vw;
+    min-height: 40px;
+    margin: 20px auto;
   }
 
   h1 {
@@ -32,15 +34,20 @@ export const Banner = styled.div`
     font-size: 60px;
     font-weight: bold;
     margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .banner-content {
-    @media only screen and (max-width: 700px) {
-      h1 {
-        font-size: 30px;
-      }
+  @media only screen and (max-width: 700px) {
+    h1 {
+      font-size: 25px;
     }
-    margin-top: 2vw;
+
+    svg {
+      height: 50px;
+    }
   }
 
   .banner-buttons {
@@ -58,7 +65,7 @@ export const Banner = styled.div`
     padding-bottom: 10px;
 
     border: 0px solid rgba(7, 7, 7, 0.12);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 
     @media only screen and (max-width: 700px) {
       margin: 5px 10px 10px 10px;
@@ -80,6 +87,8 @@ export const Banner = styled.div`
   }
 
   .slider-content {
+    height: 500px;
+
     -webkit-scrollbar {
       display: none;
     }
@@ -153,7 +162,7 @@ export const Banner = styled.div`
   }
 
   .card:hover {
-    height: 350px;
+    height: 355px;
     background: #1f5582;
   }
 

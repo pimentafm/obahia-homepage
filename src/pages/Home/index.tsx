@@ -6,8 +6,15 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { Link } from 'react-scroll';
 
-import { GiStack, GiRaining, GiMeshBall, GiEarthAmerica, GiMoneyStack, GiShakingHands } from 'react-icons/gi';
-import { MdTrendingDown } from 'react-icons/md'
+import {
+  GiStack,
+  GiRaining,
+  GiMeshBall,
+  GiEarthAmerica,
+  GiMoneyStack,
+  GiShakingHands,
+} from 'react-icons/gi';
+import { MdTrendingDown } from 'react-icons/md';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
@@ -17,19 +24,14 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Banner>
-        <div className="banner-content">
-          <div>
-            <Logo className="logo" />
-            <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
-          </div>
-        </div>
+        <Logo className="logo" />
+        <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
 
         <Slider
           className="slider-content"
           centerMode={true}
           dots={true}
           infinite={true}
-          initialSlide={3}
           slidesToShow={7}
           centerPadding="0px"
           slidesToScroll={1}
@@ -85,7 +87,12 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Séries temporais de Mapas</p>
-            <p className="text">Esta ferramenta permite a visualização e análise customizada das séries temporais de mapas a nível regional, de bacia hidrográfica, de áreas de drenagem e a nível municipal para a região do Oeste da Bahia.</p>
+            <p className="text">
+              Esta ferramenta permite a visualização e análise customizada das
+              séries temporais de mapas a nível regional, de bacia hidrográfica,
+              de áreas de drenagem e a nível municipal para a região do Oeste da
+              Bahia.
+            </p>
           </div>
 
           <div className="card">
@@ -100,7 +107,10 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Vizualização de Mapas</p>
-            <p className="text">Esta ferramenta permite a visualização e análise customizada das bases de dados contidas nessa plataforma.</p>
+            <p className="text">
+              Esta ferramenta permite a visualização e análise customizada das
+              bases de dados contidas nessa plataforma.
+            </p>
           </div>
 
           <div className="card">
@@ -115,9 +125,13 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Previsão do Início da Estação Chuvosa</p>
-            <p className="text">Esta ferramenta permite a visualização customizada da previsão do início das chuvas para o Oeste da Bahia, conforme previsto pelo sistema de previsão climática CFSv2 do NCEP/NOAA.</p>
+            <p className="text">
+              Esta ferramenta permite a visualização customizada da previsão do
+              início das chuvas para o Oeste da Bahia, conforme previsto pelo
+              sistema de previsão climática CFSv2 do NCEP/NOAA.
+            </p>
           </div>
-          
+
           <div className="card">
             <div className="icon">
               <Link
@@ -130,7 +144,9 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Previsão de Vazões Mínimas</p>
-            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
+            <p className="text" style={{ color: 'red' }}>
+              Esta ferramenta está em desenvolvimento.
+            </p>
           </div>
 
           <div className="card">
@@ -145,9 +161,13 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">
-              Visualizador do Modelo de Águas Subterrâneas
+              Visualização de Dados do Modelo de Águas Subterrâneas
             </p>
-            <p className="text">Esta ferramenta permite a visualização customizada dos resultados do modelo de águas subterrâneas paras as bacias do Alto Rio Grande, Médio Rio Grande, Rio Corrente e Rio Carinhanha.</p>
+            <p className="text">
+              Esta ferramenta permite a visualização customizada dos resultados
+              do modelo de águas subterrâneas paras as bacias do Alto Rio
+              Grande, Médio Rio Grande, Rio Corrente e Rio Carinhanha.
+            </p>
           </div>
 
           <div className="card">
@@ -162,7 +182,9 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Lucratividade Rural</p>
-            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
+            <p className="text" style={{ color: 'red' }}>
+              Esta ferramenta está em desenvolvimento.
+            </p>
           </div>
 
           <div className="card">
@@ -177,7 +199,9 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Governança</p>
-            <p className="text" style={{color: 'red'}}>Esta ferramenta está em desenvolvimento.</p>
+            <p className="text" style={{ color: 'red' }}>
+              Esta ferramenta está em desenvolvimento.
+            </p>
           </div>
         </Slider>
         <div className="banner-buttons">
