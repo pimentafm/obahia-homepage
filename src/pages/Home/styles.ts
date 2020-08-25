@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Banner = styled.div`
-  display: flex;  
+  display: flex;
   flex-direction: column;
   background: #1f5582;
   background: url(${BackgroundImg}) no-repeat center;
@@ -58,7 +58,7 @@ export const Banner = styled.div`
     padding-bottom: 10px;
 
     border: 0px solid rgba(7, 7, 7, 0.12);
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 
     @media only screen and (max-width: 700px) {
       margin: 5px 10px 10px 10px;
@@ -67,14 +67,14 @@ export const Banner = styled.div`
     }
 
     align-items: center;
-    background: #25689F;
+    background: #25689f;
     border-radius: 50px;
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5em;
   }
 
-  .banner-buttons a:hover{
+  .banner-buttons a:hover {
     background: #1f5582;
     transition: 0.3s ease;
   }
@@ -99,7 +99,7 @@ export const Banner = styled.div`
     height: 250px;
     max-width: 300px;
     min-width: 300px;
-    background-color: #25689F;
+    background-color: #25689f;
     border-radius: 10px;
     border: 0px solid rgba(7, 7, 7, 0.12);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
@@ -169,7 +169,7 @@ export const Banner = styled.div`
   }
 
   .card:hover .icons i {
-    background: linear-gradient(90deg, #2D80C0, #1f5582);
+    background: linear-gradient(90deg, #2d80c0, #1f5582);
     -webkit-text-fill-color: transparent;
     opacity: 1;
     transition: all 0.3s ease;
@@ -198,9 +198,7 @@ export const Banner = styled.div`
 
     @media only screen and (max-width: 700px) {
       top: -40px;
-      
     }
-
   }
   .slick-dots li button {
     font-size: 0;
@@ -243,7 +241,7 @@ export const Banner = styled.div`
     text-align: center;
     font-size: medium;
 
-    opacity: 0.50;
+    opacity: 0.5;
     color: #000;
 
     -webkit-font-smoothing: antialiased;
