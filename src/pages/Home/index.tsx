@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import image01 from '../../assets/image01.png';
 import image02 from '../../assets/image02.png';
@@ -9,8 +10,6 @@ import BackgroundSlideshow from 'react-background-slideshow';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-import { Link } from 'react-scroll';
 
 import {
   GiStack,
@@ -91,10 +90,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section2"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/landuse"
               >
                 <GiStack className="icons" />
               </Link>
@@ -110,14 +106,11 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="section5"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+              <a
+                href="http://obahia.dea.ufv.br"
               >
                 <GiEarthAmerica className="icons" />
-              </Link>
+              </a>
             </div>
             <p className="title">Vizualização de Mapas</p>
             <p className="text">
@@ -129,10 +122,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section1"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/onset"
               >
                 <GiRaining className="icons" />
               </Link>
@@ -148,10 +138,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section3"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/streamflow"
               >
                 <MdTrendingDown className="icons" style={{ fontSize: 10 }} />
               </Link>
@@ -165,10 +152,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section4"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/mfview"
               >
                 <GiMeshBall className="icons" />
               </Link>
@@ -186,10 +170,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section7"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/ruralprofit"
               >
                 <GiMoneyStack className="icons" />
               </Link>
@@ -203,10 +184,7 @@ const Home: React.FC = () => {
           <div className="card">
             <div className="icon">
               <Link
-                to="section7"
-                smooth={true}
-                duration={1000}
-                className="scroll-link"
+                to="/governance"
               >
                 <GiShakingHands className="icons" />
               </Link>
@@ -219,8 +197,8 @@ const Home: React.FC = () => {
         </Slider>
 
         <div className="banner-buttons">
-          <a href="http://www.google.com">Iformações adicionais</a>
-          <a href="http://www.google.com">Sobre o projeto</a>
+          <Link to="/informations">Iformações adicionais</Link>
+          <Link to="about">Sobre o projeto</Link>
         
         </div>
       </Banner>

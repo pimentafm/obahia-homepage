@@ -27,7 +27,11 @@ export const Banner = styled.div`
   svg {
     width: 70vw;
     min-height: 40px;
-    margin: 20px auto;
+    margin: 5vh auto;
+
+    @media only screen and (max-width: 700px) {
+      margin: 2vh auto;
+    }
   }
 
   h1 {
