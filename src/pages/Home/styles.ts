@@ -28,6 +28,7 @@ export const Banner = styled.div`
     width: 70vw;
     min-height: 40px;
     margin: 5vh auto;
+    margin-bottom: 40px;
 
     @media only screen and (max-width: 700px) {
       margin: 2vh auto;
@@ -40,7 +41,12 @@ export const Banner = styled.div`
     font-weight: bold;
     margin-top: 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto;
+
+    @media only screen and (max-width: 700px) {
+      margin: 0px auto;
+    }
+
     padding-left: 10px;
     padding-right: 10px;
     z-index: 2;
