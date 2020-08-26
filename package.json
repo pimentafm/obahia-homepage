@@ -10,6 +10,7 @@
     "i18next": "^19.6.3",
     "polished": "^3.6.5",
     "react": "^16.13.1",
+    "react-background-slideshow": "^1.0.4",
     "react-country-flag": "^2.3.0",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.0",

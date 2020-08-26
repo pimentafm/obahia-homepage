@@ -1,45 +1,8 @@
-import styled, { keyframes } from 'styled-components';
-
-import image01 from '../../assets/image01.png';
-import image02 from '../../assets/image02.png';
-import image03 from '../../assets/image03.png';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-const changeBackground = keyframes`
- 0%{
-   background:  url(${image01}) no-repeat center;
-   background-attachment: fixed;
-   background-size: cover;
- }
- 50%{
-   background:  url(${image02}) no-repeat center;
-   background-attachment: fixed;
-   background-size: cover;
- }
- 100%{
-   background:  url(${image03}) no-repeat center;
-   background-attachment: fixed;
-   background-size: cover;
- }
-`;
-
-export const Background = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-size: cover;
-
-  -webkit-animation: ${changeBackground} 10s infinite; /* Safari 4+ */
-  -moz-animation:    ${changeBackground} 10s infinite; /* Fx 5+ */
-  -o-animation:      ${changeBackground} 10s infinite; /* Opera 12+ */
-  animation:         ${changeBackground} 10s linear infinite; /* IE 10+, Fx 29+ */
 `;
 
 export const Banner = styled.div`
@@ -50,13 +13,15 @@ export const Banner = styled.div`
   overflow-x: hidden;
   overflow-y: hidden;
   text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
 
   .logo path {
     fill: #fff;
   }
 
   .logo {
-    z-index: 1;
+    z-index: 2;
   }
 
   svg {
@@ -74,7 +39,7 @@ export const Banner = styled.div`
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 1;
+    z-index: 2;
   }
 
   @media only screen and (max-width: 700px) {
@@ -93,7 +58,7 @@ export const Banner = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
   }
 
   .banner-buttons a {
@@ -135,6 +100,8 @@ export const Banner = styled.div`
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    z-index: 2;
   }
 
   .card {

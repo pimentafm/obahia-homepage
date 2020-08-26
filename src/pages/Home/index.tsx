@@ -1,5 +1,11 @@
 import React from 'react';
 
+import image01 from '../../assets/image01.png';
+import image02 from '../../assets/image02.png';
+import image03 from '../../assets/image03.png';
+
+import BackgroundSlideshow from 'react-background-slideshow';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -18,14 +24,19 @@ import { MdTrendingDown } from 'react-icons/md';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
-import { Container, Banner, Background } from './styles';
+import { Container, Banner } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
-   <Background />
+
       <Banner>
-      
+      <BackgroundSlideshow 
+        className="background"
+        animationDelay={1000000}
+        startAt={0}
+        images={[ image01, image02, image03 ]}
+      /> 
         <Logo className="logo" />
         <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
        
@@ -212,8 +223,6 @@ const Home: React.FC = () => {
           <a href="http://www.google.com">Sobre o projeto</a>
         
         </div>
-
-     
       </Banner>
 
     </Container>
