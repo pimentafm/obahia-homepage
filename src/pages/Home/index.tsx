@@ -5,7 +5,7 @@ import image01 from '../../assets/image01.png';
 import image02 from '../../assets/image02.png';
 import image03 from '../../assets/image03.png';
 
-import BackgroundSlideshow from 'react-background-slideshow';
+import BackgroundSlider from 'react-background-slider';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -28,17 +28,15 @@ import { Container, Banner } from './styles';
 const Home: React.FC = () => {
   return (
     <Container>
-
       <Banner>
-      <BackgroundSlideshow 
-        className="background"
-        animationDelay={1000000}
-        startAt={0}
-        images={[ image01, image02, image03 ]}
-      /> 
+        <BackgroundSlider
+          images={[image01, image02, image03]}
+          duration={10}
+          transition={1}
+        />
         <Logo className="logo" />
         <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
-       
+
         <Slider
           className="slider-content"
           centerMode={true}
@@ -89,9 +87,7 @@ const Home: React.FC = () => {
         >
           <div className="card">
             <div className="icon">
-              <Link
-                to="/landuse"
-              >
+              <Link to="/landuse">
                 <GiStack className="icons" />
               </Link>
             </div>
@@ -106,9 +102,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <a
-                href="http://obahia.dea.ufv.br"
-              >
+              <a href="http://obahia.dea.ufv.br">
                 <GiEarthAmerica className="icons" />
               </a>
             </div>
@@ -121,9 +115,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="/onset"
-              >
+              <Link to="/onset">
                 <GiRaining className="icons" />
               </Link>
             </div>
@@ -137,9 +129,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="/streamflow"
-              >
+              <Link to="/streamflow">
                 <MdTrendingDown className="icons" style={{ fontSize: 10 }} />
               </Link>
             </div>
@@ -151,9 +141,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="/mfview"
-              >
+              <Link to="/mfview">
                 <GiMeshBall className="icons" />
               </Link>
             </div>
@@ -169,9 +157,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="/ruralprofit"
-              >
+              <Link to="/ruralprofit">
                 <GiMoneyStack className="icons" />
               </Link>
             </div>
@@ -183,9 +169,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link
-                to="/governance"
-              >
+              <Link to="/governance">
                 <GiShakingHands className="icons" />
               </Link>
             </div>
@@ -199,10 +183,8 @@ const Home: React.FC = () => {
         <div className="banner-buttons">
           <Link to="/informations">Iformações adicionais</Link>
           <Link to="about">Sobre o projeto</Link>
-        
         </div>
       </Banner>
-
     </Container>
   );
 };

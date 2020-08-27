@@ -9,6 +9,8 @@ export const Banner = styled.div`
   display: flex;
   flex-direction: column;
 
+  background: #000000;
+
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -24,6 +26,9 @@ export const Banner = styled.div`
     z-index: 2;
   }
 
+  #ReactBackgroundSlider {
+    z-index: 1;
+  }
   svg {
     width: 70vw;
     min-height: 40px;
