@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import image01 from '../../assets/image01.png';
@@ -11,6 +11,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
   GiStack,
   GiRaining,
@@ -19,13 +21,50 @@ import {
   GiMoneyStack,
   GiShakingHands,
 } from 'react-icons/gi';
+
 import { MdTrendingDown } from 'react-icons/md';
+
+import { Modal, Button } from 'antd';
+import 'antd/dist/antd.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import { Container, Banner } from './styles';
+import HtmlParser from 'react-html-parser';
 
 const Home: React.FC = () => {
+  const [notificationModal, setNotificationModal] = useState<boolean>(true);
+
+  const notify = () =>
+    toast.error(`Página em desenvolvimento!!!`, {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+  const modalTitle = HtmlParser(
+    `<span style="color: #1f5582; font-weight: 600; font-size: 16px;">OBahia</span><span> Inteligência Territorial e Hídrica para o Oeste da Bahia</span>`,
+  );
+
+  const showNotificationModal = () => {
+    setNotificationModal(true);
+  };
+
+  const handleOk = () => {
+    setNotificationModal(false);
+  };
+
+  useEffect(() => {
+    showNotificationModal();
+  }, []);
+
   return (
     <Container>
       <Banner>
@@ -93,10 +132,9 @@ const Home: React.FC = () => {
             </div>
             <p className="title">Séries temporais de Mapas</p>
             <p className="text">
-              Esta ferramenta permite a visualização e análise customizada das
-              séries temporais de mapas a nível regional, de bacia hidrográfica,
-              de áreas de drenagem e a nível municipal para a região do Oeste da
-              Bahia.
+              Visualização e análise customizada das séries temporais de mapas a
+              nível regional, bacia hidrográfica, áreas de drenagem e municipal
+              para a região do Oeste da Bahia.
             </p>
           </div>
 
@@ -108,8 +146,8 @@ const Home: React.FC = () => {
             </div>
             <p className="title">Vizualização de Mapas</p>
             <p className="text">
-              Esta ferramenta permite a visualização e análise customizada das
-              bases de dados contidas nessa plataforma.
+              Visualização e análise customizada das bases de dados contidas
+              nessa plataforma.
             </p>
           </div>
 
@@ -121,9 +159,9 @@ const Home: React.FC = () => {
             </div>
             <p className="title">Previsão do Início da Estação Chuvosa</p>
             <p className="text">
-              Esta ferramenta permite a visualização customizada da previsão do
-              início das chuvas para o Oeste da Bahia, conforme previsto pelo
-              sistema de previsão climática CFSv2 do NCEP/NOAA.
+              Visualização customizada da previsão do início das chuvas para o
+              Oeste da Bahia, conforme previsto pelo sistema de previsão
+              climática CFSv2 do NCEP/NOAA.
             </p>
           </div>
 
@@ -149,15 +187,15 @@ const Home: React.FC = () => {
               Visualização de Dados do Modelo de Águas Subterrâneas
             </p>
             <p className="text">
-              Esta ferramenta permite a visualização customizada dos resultados
-              do modelo de águas subterrâneas paras as bacias do Alto Rio
-              Grande, Médio Rio Grande, Rio Corrente e Rio Carinhanha.
+              Visualização customizada dos resultados do modelo de águas
+              subterrâneas para as bacias do Alto Rio Grande, Médio Rio Grande,
+              Rio Corrente e Rio Carinhanha.
             </p>
           </div>
 
           <div className="card">
             <div className="icon">
-              <Link to="/ruralprofit">
+              <Link to="#" onClick={notify}>
                 <GiMoneyStack className="icons" />
               </Link>
             </div>
@@ -169,7 +207,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/governance">
+              <Link to="#" onClick={notify}>
                 <GiShakingHands className="icons" />
               </Link>
             </div>
@@ -181,10 +219,58 @@ const Home: React.FC = () => {
         </Slider>
 
         <div className="banner-buttons">
-          <Link to="/informations">Iformações adicionais</Link>
-          <Link to="about">Sobre o projeto</Link>
+          <Link to="#" onClick={notify}>
+            Iformações adicionais
+          </Link>
+          <Link to="#" onClick={notify}>
+            Sobre o projeto
+          </Link>
         </div>
       </Banner>
+
+      <Modal
+        title={modalTitle}
+        visible={notificationModal}
+        onOk={handleOk}
+        closable={false}
+        footer={[
+          <Button
+            key="submit"
+            style={{
+              background: '#1f5582',
+              color: '#fff',
+              borderColor: '#fff',
+            }}
+            onClick={handleOk}
+          >
+            Continue
+          </Button>,
+        ]}
+      >
+        <h3 style={{ textAlign: 'center', color: '#ff0000' }}>
+          Esta pagina é uma versão em testes
+        </h3>
+
+        <h3 style={{ textAlign: 'center' }}>
+          Modificações serão feitas durante o período de desenvolvimento deste
+          projeto.
+        </h3>
+
+        <h3 style={{ textAlign: 'center' }}>
+          Esta versão foi atualizada em 31/08/2020.
+        </h3>
+      </Modal>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </Container>
   );
 };
