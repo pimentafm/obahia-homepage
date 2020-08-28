@@ -39,7 +39,7 @@ const Home: React.FC = () => {
   const [notificationModal, setNotificationModal] = useState<boolean>(true);
 
   const notify = () =>
-    toast.error(`Página em desenvolvimento!!!`, {
+    toast.error(`Não é possível acessar esta ferramenta no momento!!!`, {
       position: 'top-center',
       autoClose: 5000,
       hideProgressBar: false,
@@ -126,7 +126,7 @@ const Home: React.FC = () => {
         >
           <div className="card">
             <div className="icon">
-              <Link to="/landuse">
+              <Link to="#" onClick={notify}>
                 <GiStack className="icons" />
               </Link>
             </div>
@@ -167,7 +167,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/streamflow">
+              <Link to="#" onClick={notify}>
                 <MdTrendingDown className="icons" style={{ fontSize: 10 }} />
               </Link>
             </div>
@@ -179,7 +179,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/mfview">
+              <Link to="#" onClick={notify}>
                 <GiMeshBall className="icons" />
               </Link>
             </div>
