@@ -153,9 +153,9 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/onset">
+              <a href="http://corrente.dea.ufv.br/onset">
                 <GiRaining className="icons" />
-              </Link>
+              </a>
             </div>
             <p className="title">Previsão do Início da Estação Chuvosa</p>
             <p className="text">
