@@ -220,7 +220,7 @@ const Home: React.FC = () => {
 
         <div className="banner-buttons">
           <Link to="#" onClick={notify}>
-            Iformações adicionais
+            Informações adicionais
           </Link>
           <Link to="#" onClick={notify}>
             Sobre o projeto
