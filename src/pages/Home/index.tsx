@@ -126,6 +126,19 @@ const Home: React.FC = () => {
         >
           <div className="card">
             <div className="icon">
+              <a href="http://obahia.dea.ufv.br/maps/38/view">
+                <GiEarthAmerica className="icons" />
+              </a>
+            </div>
+            <p className="title">Servidor de Mapas</p>
+            <p className="text">
+              Visualização e análise customizada das bases de dados contidas
+              nessa plataforma.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="icon">
               <Link to="#" onClick={notify}>
                 <GiStack className="icons" />
               </Link>
@@ -140,20 +153,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <a href="http://obahia.dea.ufv.br">
-                <GiEarthAmerica className="icons" />
-              </a>
-            </div>
-            <p className="title">Vizualização de Mapas</p>
-            <p className="text">
-              Visualização e análise customizada das bases de dados contidas
-              nessa plataforma.
-            </p>
-          </div>
-
-          <div className="card">
-            <div className="icon">
-              <a href="http://corrente.dea.ufv.br/onset">
+              <a href="http://obahia.dea.ufv.br/onset">
                 <GiRaining className="icons" />
               </a>
             </div>
@@ -257,7 +257,7 @@ const Home: React.FC = () => {
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
-          Esta versão foi atualizada em 31/08/2020.
+          Esta versão foi atualizada em 03/09/2020.
         </h3>
       </Modal>
       <ToastContainer
