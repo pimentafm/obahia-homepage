@@ -102,7 +102,7 @@ export const Banner = styled.div`
   }
 
   .slider-content {
-    height: 400px;
+    height: 360px;
 
     -webkit-scrollbar {
       display: none;
@@ -200,22 +200,13 @@ export const Banner = styled.div`
     transition: all 0.3s ease;
   }
 
-  .scroll-link {
-    width: 4vw;
-    height: 4vw;
-    min-width: 60px;
-    min-height: 60px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-
   .slick-dots li {
     position: relative;
 
     display: inline-block;
 
     width: 20px;
-    height: 20px;
+    height: 40px;
     margin: 0 5px;
     padding: 0;
 
@@ -263,13 +254,14 @@ export const Banner = styled.div`
     font-size: medium;
 
     opacity: 0.5;
-    color: #000;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    z-index: -1;
   }
   .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: white;
+    opacity: 1;
+    color: #1f5582;
   }
 `;
