@@ -31,9 +31,7 @@ export const Banner = styled.div`
   }
   svg {
     width: 70vw;
-    min-height: 40px;
-    margin: 5vh auto;
-    margin-bottom: 40px;
+    margin: 4vh auto;
 
     @media only screen and (max-width: 700px) {
       margin: 2vh auto;
@@ -42,11 +40,10 @@ export const Banner = styled.div`
 
   h1 {
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
-    margin-top: 20px;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 10px auto;
 
     @media only screen and (max-width: 700px) {
       margin: 0px auto;
@@ -63,7 +60,7 @@ export const Banner = styled.div`
     }
 
     svg {
-      height: 50px;
+      height: 60px;
     }
   }
 
@@ -105,7 +102,7 @@ export const Banner = styled.div`
   }
 
   .slider-content {
-    height: 500px;
+    height: 400px;
 
     -webkit-scrollbar {
       display: none;

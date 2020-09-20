@@ -81,6 +81,7 @@ const Home: React.FC = () => {
           centerMode={true}
           dots={true}
           infinite={true}
+          autoplay={true}
           slidesToShow={7}
           centerPadding="0px"
           slidesToScroll={1}
