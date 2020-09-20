@@ -131,7 +131,6 @@ export const Banner = styled.div`
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
     font-size: 16px;
     transition: all 0.3s ease;
-    cursor: pointer;
   }
 
   .icons {
@@ -220,8 +219,6 @@ export const Banner = styled.div`
     margin: 0 5px;
     padding: 0;
 
-    cursor: pointer;
-
     @media only screen and (max-width: 700px) {
       top: -40px;
     }
@@ -235,8 +232,6 @@ export const Banner = styled.div`
     width: 20px;
     height: 20px;
     padding: 5px;
-
-    cursor: pointer;
 
     color: transparent;
     border: 0;
