@@ -16,10 +16,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   GiStack,
   GiRaining,
-  GiMeshBall,
+  // GiMeshBall,
   GiEarthAmerica,
-  GiMoneyStack,
-  GiShakingHands,
+  // GiMoneyStack,
+  // GiShakingHands,
 } from 'react-icons/gi';
 
 import { MdTrendingDown } from 'react-icons/md';
@@ -35,11 +35,13 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { Container, Banner } from './styles';
 import HtmlParser from 'react-html-parser';
 
+import ReactGA from 'react-ga';
+
 const Home: React.FC = () => {
   const [notificationModal, setNotificationModal] = useState<boolean>(true);
 
   const notify = () =>
-    toast.error(`Não é possível acessar esta ferramenta no momento!!!`, {
+    toast.error(`Não é possível acessar esta página no momento!!!`, {
       position: 'top-center',
       autoClose: 5000,
       hideProgressBar: false,
@@ -62,6 +64,9 @@ const Home: React.FC = () => {
   };
 
   useEffect(() => {
+    ReactGA.initialize('G-N65EWY102F');
+    ReactGA.pageview('/');
+
     showNotificationModal();
   }, []);
 
@@ -82,23 +87,23 @@ const Home: React.FC = () => {
           dots={true}
           infinite={true}
           autoplay={true}
-          slidesToShow={7}
+          slidesToShow={4}
           centerPadding="0px"
           slidesToScroll={1}
           speed={500}
           responsive={[
-            {
-              breakpoint: 2060,
-              settings: {
-                slidesToShow: 6,
-              },
-            },
-            {
-              breakpoint: 1920,
-              settings: {
-                slidesToShow: 5,
-              },
-            },
+            // {
+            //   breakpoint: 2060,
+            //   settings: {
+            //     slidesToShow: 6,
+            //   },
+            // },
+            // {
+            //   breakpoint: 1920,
+            //   settings: {
+            //     slidesToShow: 5,
+            //   },
+            // },
             {
               breakpoint: 1580,
               settings: {
@@ -140,9 +145,9 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="#" onClick={notify}>
+              <a href="http://obahia.dea.ufv.br/landuse">
                 <GiStack className="icons" />
-              </Link>
+              </a>
             </div>
             <p className="title">Séries temporais de Mapas</p>
             <p className="text">
@@ -168,17 +173,20 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="#" onClick={notify}>
+              <a href="http://obahia.dea.ufv.br/stream">
                 <MdTrendingDown className="icons" style={{ fontSize: 10 }} />
-              </Link>
+              </a>
             </div>
-            <p className="title">Previsão de Vazões Mínimas</p>
-            <p className="text" style={{ color: 'red' }}>
-              Esta ferramenta está em desenvolvimento.
+            <p className="title">
+              Previsão de Vazões Mínimas e Estresse Hídrico
+            </p>
+            <p className="text">
+              Visualização do status de estresse hídrico nas estações
+              telemétricas para a região do Oeste da Bahia.
             </p>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="icon">
               <Link to="#" onClick={notify}>
                 <GiMeshBall className="icons" />
@@ -216,7 +224,7 @@ const Home: React.FC = () => {
             <p className="text" style={{ color: 'red' }}>
               Esta ferramenta está em desenvolvimento.
             </p>
-          </div>
+          </div> */}
         </Slider>
 
         <div className="banner-buttons">
