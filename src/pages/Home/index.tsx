@@ -64,7 +64,7 @@ const Home: React.FC = () => {
   };
 
   useEffect(() => {
-    ReactGA.initialize('G-N65EWY102F');
+    ReactGA.initialize('UA-181577909-1');
     ReactGA.pageview('/');
 
     showNotificationModal();
