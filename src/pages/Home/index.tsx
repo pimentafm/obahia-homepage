@@ -261,8 +261,13 @@ const Home: React.FC = () => {
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
-          Modificações serão feitas durante o período de desenvolvimento deste
-          projeto.
+          Modificações estão sendo feitas durante o período de desenvolvimento
+          deste projeto.
+        </h3>
+
+        <h3 style={{ textAlign: 'center' }}>
+          Limpe a memoria cache do seu navegador para evitar erros na
+          renderização das páginas.
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
