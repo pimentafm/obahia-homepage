@@ -16,7 +16,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   GiStack,
   GiRaining,
-  // GiMeshBall,
+  GiMeshBall,
   GiEarthAmerica,
   // GiMoneyStack,
   // GiShakingHands,
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
           dots={true}
           infinite={true}
           autoplay={true}
-          slidesToShow={4}
+          slidesToShow={5}
           centerPadding="0px"
           slidesToScroll={1}
           speed={500}
@@ -98,12 +98,12 @@ const Home: React.FC = () => {
             //     slidesToShow: 6,
             //   },
             // },
-            // {
-            //   breakpoint: 1920,
-            //   settings: {
-            //     slidesToShow: 5,
-            //   },
-            // },
+            {
+              breakpoint: 1920,
+              settings: {
+                slidesToShow: 5,
+              },
+            },
             {
               breakpoint: 1580,
               settings: {
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          {/* <div className="card">
+          <div className="card">
             <div className="icon">
               <Link to="#" onClick={notify}>
                 <GiMeshBall className="icons" />
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="card">
+          {/* <div className="card">
             <div className="icon">
               <Link to="#" onClick={notify}>
                 <GiMoneyStack className="icons" />
@@ -266,12 +266,12 @@ const Home: React.FC = () => {
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
-          Limpe a memoria cache do seu navegador para evitar erros na
+          Limpe a memoria cache do seu navegador (CTRL+F5) para evitar erros na
           renderização das páginas.
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
-          Esta versão foi atualizada em 09/11/2020.
+          Esta versão foi atualizada em 12/11/2020.
         </h3>
       </Modal>
       <ToastContainer
