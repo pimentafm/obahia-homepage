@@ -30,7 +30,7 @@ export const Banner = styled.div`
     z-index: 1;
   }
   svg {
-    width: 70vw;
+    width: 60vw;
     margin: 4vh auto;
 
     @media only screen and (max-width: 700px) {
@@ -40,7 +40,7 @@ export const Banner = styled.div`
 
   h1 {
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     max-width: 1000px;
     margin: 10px auto;

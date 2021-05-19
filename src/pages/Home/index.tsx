@@ -18,8 +18,8 @@ import {
   GiRaining,
   GiMeshBall,
   GiEarthAmerica,
-  // GiMoneyStack,
-  // GiShakingHands,
+  GiMoneyStack,
+  GiShakingHands,
 } from 'react-icons/gi';
 
 import { MdTrendingDown } from 'react-icons/md';
@@ -87,17 +87,17 @@ const Home: React.FC = () => {
           dots={true}
           infinite={true}
           autoplay={true}
-          slidesToShow={5}
+          slidesToShow={7}
           centerPadding="0px"
           slidesToScroll={1}
           speed={500}
           responsive={[
-            // {
-            //   breakpoint: 2060,
-            //   settings: {
-            //     slidesToShow: 6,
-            //   },
-            // },
+            {
+              breakpoint: 2060,
+              settings: {
+                slidesToShow: 6,
+              },
+            },
             {
               breakpoint: 1920,
               settings: {
@@ -188,9 +188,9 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="#" onClick={notify}>
+              <a href="http://obahia.dea.ufv.br/mfview">
                 <GiMeshBall className="icons" />
-              </Link>
+              </a>
             </div>
             <p className="title">
               Visualização de Dados do Modelo de Águas Subterrâneas
@@ -202,7 +202,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          {/* <div className="card">
+          <div className="card">
             <div className="icon">
               <Link to="#" onClick={notify}>
                 <GiMoneyStack className="icons" />
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
             <p className="text" style={{ color: 'red' }}>
               Esta ferramenta está em desenvolvimento.
             </p>
-          </div> */}
+          </div>
         </Slider>
 
         <div className="banner-buttons">
