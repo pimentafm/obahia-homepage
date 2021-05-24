@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react';
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import { Link } from 'react-router-dom';
 
 import image01 from '../../assets/image01.png';
@@ -6,10 +11,6 @@ import image02 from '../../assets/image02.png';
 import image03 from '../../assets/image03.png';
 
 import BackgroundSlider from 'react-background-slider';
-
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -84,8 +85,8 @@ const Home: React.FC = () => {
         />
 
         <Slider
-          className="slider-content"
           centerMode={true}
+          arrows={true}
           dots={true}
           infinite={true}
           autoplay={true}
@@ -93,6 +94,7 @@ const Home: React.FC = () => {
           centerPadding="0px"
           slidesToScroll={1}
           speed={500}
+          className="slider-content"
           responsive={[
             {
               breakpoint: 2060,

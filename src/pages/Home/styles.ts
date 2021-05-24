@@ -115,7 +115,57 @@ export const Banner = styled.div`
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 
-    z-index: 2;
+    z-index: 1;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    left: 50%;
+    top: 83%;
+
+    @media only screen and (min-width: 700px) {
+      top: 94%;
+    }
+
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background: rgba(31, 85, 130, 0.24);
+    border-radius: 50%;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      display: inline-block;
+      border-style: solid;
+    }
+    &.slick-prev {
+      transform: translateX(-50%) translateX(-130px);
+      z-index: 1;
+      &:after {
+        transform: translateX(-50%) translateX(-2px) translateY(-50%);
+        border-width: 9px 12px 9px 0;
+        border-color: transparent #fff transparent transparent;
+      }
+    }
+    &.slick-next {
+      transform: translateX(-50%) translateX(130px);
+      z-index: 1;
+      &:after {
+        transform: translateX(-50%) translateX(2px) translateY(-50%);
+        border-width: 9px 0 9px 12px;
+        border-color: transparent transparent transparent #fff;
+      }
+    }
+    &.slick-disabled {
+      cursor: default;
+      background: green;
+      opacity: 0.5;
+    }
   }
 
   .card {
