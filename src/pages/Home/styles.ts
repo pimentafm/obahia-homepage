@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+
+  height: 100vh;
 `;
 
 export const LogoContainer = styled.div`
@@ -10,7 +12,7 @@ export const LogoContainer = styled.div`
   text-align: center;
 
   .logo path {
-    fill: #1f5582;
+    fill: #fff;
   }
 
   svg {
@@ -23,7 +25,7 @@ export const LogoContainer = styled.div`
   }
 
   h1 {
-    color: #1f5582;
+    color: #fff;
     font-size: 40px;
     font-weight: bold;
     max-width: 1000px;
@@ -54,7 +56,6 @@ export const Banner = styled.div`
 
   background: #1f5582;
 
-  height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
   text-align: center;
