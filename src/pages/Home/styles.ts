@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+  background: '#1f5582' Important;
+
   height: 100vh;
 `;
 
@@ -54,7 +56,7 @@ export const Banner = styled.div`
   display: flex;
   flex-direction: column;
 
-  background: #1f5582;
+  background: #fff;
 
   overflow-x: hidden;
   overflow-y: hidden;
