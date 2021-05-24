@@ -275,7 +275,7 @@ const Home: React.FC = () => {
         </h3>
 
         <h3 style={{ textAlign: 'center' }}>
-          Esta versão foi atualizada em 09/03/2021.
+          Esta versão foi atualizada em 26/05/2021.
         </h3>
       </Modal>
       <ToastContainer
