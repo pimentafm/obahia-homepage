@@ -5,30 +5,14 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const Banner = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  background: #000000;
-
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+export const LogoContainer = styled.div`
+  z-index: 2;
   text-align: center;
-  background-attachment: fixed;
-  background-size: cover;
 
   .logo path {
-    fill: #fff;
+    fill: #1f5582;
   }
 
-  .logo {
-    z-index: 2;
-  }
-
-  #ReactBackgroundSlider {
-    z-index: 1;
-  }
   svg {
     width: 60vw;
     margin: 4vh auto;
@@ -39,7 +23,7 @@ export const Banner = styled.div`
   }
 
   h1 {
-    color: #fff;
+    color: #1f5582;
     font-size: 40px;
     font-weight: bold;
     max-width: 1000px;
@@ -51,7 +35,6 @@ export const Banner = styled.div`
 
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 2;
   }
 
   @media only screen and (max-width: 700px) {
@@ -62,6 +45,24 @@ export const Banner = styled.div`
     svg {
       height: 60px;
     }
+  }
+`;
+
+export const Banner = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  background: #1f5582;
+
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  #ReactBackgroundSlider {
+    z-index: 1;
   }
 
   .banner-buttons {

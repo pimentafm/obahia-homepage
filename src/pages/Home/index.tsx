@@ -32,7 +32,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
-import { Container, Banner } from './styles';
+import { Container, LogoContainer, Banner } from './styles';
 import HtmlParser from 'react-html-parser';
 
 import ReactGA from 'react-ga';
@@ -72,14 +72,16 @@ const Home: React.FC = () => {
 
   return (
     <Container>
+      <LogoContainer>
+        <Logo className="logo" />
+        <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
+      </LogoContainer>
       <Banner>
         <BackgroundSlider
           images={[image01, image02, image03]}
           duration={10}
           transition={1}
         />
-        <Logo className="logo" />
-        <h1>Inteligência Territorial e Hídrica para o Oeste da Bahia</h1>
 
         <Slider
           className="slider-content"
