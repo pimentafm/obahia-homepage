@@ -208,7 +208,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/ruralprofitability" target="_blank">
+              <Link to="/ruralprofitability">
                 <GiMoneyStack className="icons" />
               </Link>
             </div>
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="/governance" target="_blank">
+              <Link to="/governance">
                 <GiShakingHands className="icons" />
               </Link>
             </div>

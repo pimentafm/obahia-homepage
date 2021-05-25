@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Container, Content } from './styles';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
@@ -7,7 +8,10 @@ const Governance: React.FC = () => {
   return (
     <Container>
       <Content>
-        <Logo className="logo" />
+        <Link to="/">
+          <Logo className="logo" title="Página principal" />
+        </Link>
+
         <h1 className="subtitle">
           Estudo do potencial hídrico da região Oeste da Bahia: quantificação e
           monitoramento da disponibilidade dos recursos do Aquífero Urucuia e
