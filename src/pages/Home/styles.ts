@@ -123,18 +123,18 @@ export const Banner = styled.div`
   .slick-arrow {
     position: absolute;
     left: 50%;
-    top: 83%;
+    top: 82%;
 
     @media only screen and (min-width: 700px) {
-      top: 94%;
+      top: 93%;
     }
 
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     text-indent: -9999px;
     background-repeat: no-repeat;
-    background: rgba(31, 85, 130, 0.24);
+    background: rgba(31, 85, 130, 0.5);
     border-radius: 50%;
     &:after {
       content: '';
