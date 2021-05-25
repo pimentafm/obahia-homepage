@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -40,6 +41,8 @@ import ReactGA from 'react-ga';
 
 const Home: React.FC = () => {
   const [notificationModal, setNotificationModal] = useState<boolean>(true);
+
+  const history = useHistory();
 
   const notify = () =>
     toast.error(`Não é possível acessar esta página no momento!!!`, {
@@ -220,7 +223,11 @@ const Home: React.FC = () => {
 
           <div className="card">
             <div className="icon">
-              <Link to="#" onClick={notify}>
+              <Link
+                to="/governance"
+                target="_blank"
+                onClick={() => history.push('/governance')}
+              >
                 <GiShakingHands className="icons" />
               </Link>
             </div>
