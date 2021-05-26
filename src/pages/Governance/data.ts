@@ -93,8 +93,8 @@ export const linkdata = [
     url: 'http://obahia.dea.ufv.br/layers/geonode:ativecon_pecuaria_1',
   },
   {
-    name: 'http://obahia.dea.ufv.br/layers/geonode:ativecon_hortiflori',
-    url: 'Atividade Econômica - Horticultura & Floricultura',
+    name: 'Atividade Econômica - Horticultura & Floricultura',
+    url: 'http://obahia.dea.ufv.br/layers/geonode:ativecon_hortiflori',
   },
   {
     name: 'Atividade Econômica - Sementes & Mudas',
@@ -149,7 +149,7 @@ export const linkdata = [
     url: 'http://obahia.dea.ufv.br/layers/geonode:rendimento_mandioca',
   },
   {
-    name: 'http://obahia.dea.ufv.br/layers/geonode:rendimento_milho',
+    name: 'Rendimento - Milho',
     url: 'http://obahia.dea.ufv.br/layers/geonode:rendimento_milho',
   },
   {
