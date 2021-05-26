@@ -27,12 +27,13 @@ export const Content = styled.div`
   }
 
   .section {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #1f5582;
+    font-weight: bold;
   }
 
   .subsection {
-    font-size: 30px;
+    font-size: 2rem;
     color: #1f5582;
   }
 
@@ -43,8 +44,9 @@ export const Content = styled.div`
     font-size: 1.5rem;
   }
 
-  ol {
+  ul {
     text-align: justify;
+    color: #1f5582;
     padding: 5px;
     margin-left: 50px;
     font-size: 1.5rem;
