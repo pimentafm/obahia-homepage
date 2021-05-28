@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Container, Content } from './styles';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
-import { linkdata } from './data';
+import { linkdata, publications } from './data';
 
 const Governance: React.FC = () => {
   return (
@@ -15,9 +15,9 @@ const Governance: React.FC = () => {
         </Link>
 
         <h1 className="subtitle">
-          Estudo do potencial hídrico da região Oeste da Bahia: quantificação e
-          monitoramento da disponibilidade dos recursos do Aquífero Urucuia e
-          Superficiais nas bacias dos Rios Grande, Corrente e Carinhanha
+          Resumo das ações de governança, mapas para visualização de
+          estatísticas municipais de variáveis agrícolas e download de mapas
+          anuais da Produção Agrícola Municipal em formato SIG
         </h1>
 
         <p className="section">1. Resumo das ações de governança</p>
@@ -395,6 +395,17 @@ const Governance: React.FC = () => {
         <br />
         <p className="subsection">1.9 Links para publicações científicas</p>
         <br />
+
+        <ul>
+          {publications.map(o => (
+            <li>
+              <a href={o.url} target="_blank" rel="noopener noreferrer">
+                {' '}
+                {o.year} - {o.name}
+              </a>
+            </li>
+          ))}
+        </ul>
 
         <p className="section">
           2. Mapas para visualização de estatísticas municipais de variáveis

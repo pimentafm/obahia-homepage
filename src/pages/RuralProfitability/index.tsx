@@ -12,19 +12,58 @@ const RuralProfitability: React.FC = () => {
           <Logo className="logo" title="Página principal" />
         </Link>
 
-        <h1 className="subtitle">Lucratividade Rural - Em desenvolvimento</h1>
+        <h1 className="subtitle">
+          Modelo de otimização econômica da atividade agrícola considerando o
+          regime hídrico e disponibilidade de outorga regional
+        </h1>
 
-        <p className="section">Resumo</p>
+        <p className="section">1. Descrição geral</p>
+        <p className="subsection">1.1 Introdução</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          A programação linear é um método amplamente utilizado para otimização
+          da atividade agrícola com diversos objetivos. Dentre os principais
+          objetivos, estão a otimização de alocação de água, maximização de
+          benefícios econômicos, melhorar o manejo de irrigação e guiar ações de
+          governança.
+        </p>
+        <p>
+          Neste modelo de programação linear é proposto uma maximização
+          econômica da atividade agrícola, considerando as respostas dadas pelo
+          modelo de previsão do início da estação chuvosa. Este modelo é
+          possível de ser aplicado em diversos níveis de gestão de água como
+          fazendas, municípios e região.
+        </p>
+        <p>
+          Através do cadastro de informações disponíveis na plataforma OBahia, o
+          modelo pode ser utilizado de forma livre, auxiliando na tomada de
+          decisão de qual cultura plantar, em quais áreas e em quais quinzenas,
+          visando melhor uso dos recursos hídricos e maior lucratividade final.
         </p>
         <br />
+        <p className="section">2. Modelo de lucratividade rural</p>
+        <p className="subsection">2.1 Downloads</p>
+        <p>
+          O modelo de lucratividade rural e o manual de uso podem ser baixados
+          nos links a seguir:
+        </p>
+        <ul>
+          <li>
+            <a
+              href="ftp://obahia.dea.ufv.br/ruralprofitability/ModeloLucratividadeRural.xlsx"
+              rel="noopener noreferrer"
+            >
+              Modelo de Lucratividade Rural
+            </a>
+          </li>
+          <li>
+            <a
+              href="ftp://obahia.dea.ufv.br/ruralprofitability/Manual_ModeloLucratividadeRural.pdf"
+              rel="noopener noreferrer"
+            >
+              Manual do modelo de Lucratividade Rural
+            </a>
+          </li>
+        </ul>
       </Content>
     </Container>
   );

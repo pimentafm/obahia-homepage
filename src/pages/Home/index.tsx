@@ -213,8 +213,9 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Lucratividade Rural</p>
-            <p className="text" style={{ color: 'red' }}>
-              Esta ferramenta está em desenvolvimento.
+            <p className="text">
+              Modelo de otimização econômica da atividade agrícola considerando
+              o regime hídrico e disponibilidade de outorga regional.
             </p>
           </div>
 
@@ -225,8 +226,10 @@ const Home: React.FC = () => {
               </Link>
             </div>
             <p className="title">Governança</p>
-            <p className="text" style={{ color: 'red' }}>
-              Esta ferramenta está em desenvolvimento.
+            <p className="text">
+              Resumo das ações de governança, mapas para visualização de
+              estatísticas municipais de variáveis agrícolas e download de mapas
+              anuais da Produção Agrícola Municipal em formato SIG.
             </p>
           </div>
         </Slider>

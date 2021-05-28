@@ -209,3 +209,43 @@ export const linkdata = [
     url: 'http://obahia.dea.ufv.br/layers/geonode:produtor_ateensfundamental',
   },
 ];
+
+export const publications = [
+  {
+    name:
+      'Historical Changes in Land Use and Suitability for Future Agriculture Expansion in Western Bahia, Brazil',
+    url: 'https://www.mdpi.com/2072-4292/13/6/1088',
+    year: '2021',
+  },
+  {
+    name:
+      'A Remote Sensing Diagnosis of Water Use and Water Stress in a Region with Intense Irrigation Growth in Brazil',
+    url: 'https://www.mdpi.com/2072-4292/12/22/3725',
+    year: '2020',
+  },
+  {
+    name:
+      'Carbon stocks and dynamics of different land uses on the Cerrado agricultural frontier',
+    url:
+      'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241637',
+    year: '2020',
+  },
+  {
+    name:
+      'Soil Carbon Sequestration in Rainfed and Irrigated Production Systems in a New Brazilian Agricultural Frontier',
+    url: 'https://www.mdpi.com/2077-0472/10/5/156',
+    year: '2020',
+  },
+  {
+    name:
+      'Climate Change and Intense Irrigation Growth in Western Bahia, Brazil: The Urgent Need for Hydroclimatic Monitoring',
+    url: 'https://www.mdpi.com/2073-4441/11/5/933',
+    year: '2019',
+  },
+  {
+    name:
+      'Influence of Land Use and Land Cover on Hydraulic and Physical Soil Properties at the Cerrado Agricultural Frontier ',
+    url: 'https://www.mdpi.com/2077-0472/9/1/24',
+    year: '2019',
+  },
+];
